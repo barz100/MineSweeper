@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <title>minesweeper </title>
+</head>
+
+<body onload="initGame()">
+    <center>
+        <div class="board-container">
+            <span class="level" data-lvl="1" onclick="setLevel(this)">Beginner</span>
+            <span class="level" data-lvl="2" onclick="setLevel(this)">Medium</span>
+            <span class="level" data-lvl="3" onclick="setLevel(this)">Expert</span>
+            <span class="timer">⌛ 00:00</span>
+            <button class="hint" onclick="hintClicked()"></button>
+            <div class="life"></div>
+            <span class="score"></span>
+            <div class="smiley" onclick="startOver()"></div>
+            <div>
+                <table>
+                    <tbody class="board">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </center>
+    <script src=js/utils.js></script>
+    <script src=js/game.js></script>
+    <script src=js/plays.js></script>
+    <script src=js/render.js></script>
+</body>
+
+</html>

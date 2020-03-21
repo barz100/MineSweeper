@@ -1,0 +1,120 @@
+ body {
+     /* background-color: #f5f6fa; */
+     font-family: Arial, Helvetica, sans-serif;
+    background: url("./img/background.jpg");
+ }
+.board-container {
+    border: 10px double #662596 ;
+    padding: 10px;
+    width: 500px;
+    height: 630px;
+    background-color: #ff94fdc2;
+    margin-right: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+.hintOn {
+    background-color: yellow !important;
+}
+
+.hint {
+    cursor: pointer;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+.hint:focus {
+    outline: none;
+}
+
+.hint:hover {
+    color: #336699;
+}
+
+.life {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.timer {
+    margin: 5px;
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+.level { 
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    background-color: #662596;
+    color: white;
+    border-radius: 5px;
+    font-family: Fantasy, Arial;
+} 
+.smiley {
+    cursor: pointer;
+    font-size: 25px;
+    text-align: center;
+    margin: 12px;
+    width: 50px;
+    height: 40px;
+    background-color: #662596;
+    border: 4px double   thistle;
+}
+table {
+    margin: 20px;
+    border:1.5px solid black;
+}
+td {
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+    text-align: center; 
+    border:1.5px solid black;
+    width: 35px;
+    height: 35px; 
+    background-color: #E8E8E8;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 4px;
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.back {
+    background-color: #662596;
+    font-size: 0px;
+}
+.flag {
+    background-color: #662596;
+     /* border: 5px solid rgb(75, 14, 75); */
+}
+.oneMine {
+    color: blue;
+}
+.twoMine {
+    color: green;
+}
+
+.threeMine {
+    color: red;
+}
+.fourPlusMine {
+    color: darkblue;
+}
+
+
+.score {
+    font-weight: bold;
+    float: right;
+    color: black;
+    font-size: 17px;
+}
