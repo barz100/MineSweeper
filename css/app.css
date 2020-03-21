@@ -56,6 +56,7 @@
     color: white;
     border-radius: 5px;
     font-family: Fantasy, Arial;
+    transition: background-color 0.2s ease; 
 } 
 .smiley {
     cursor: pointer;
@@ -66,6 +67,7 @@
     height: 40px;
     background-color: #662596;
     border: 4px double   thistle;
+    transition: background-color 0.2s ease; 
 }
 table {
     margin: 20px;
@@ -88,6 +90,10 @@ td {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    transition: background-color 0.2s ease;  
+}
+td:hover,.smiley:hover,.level:hover {
+     background-color: #a90976; 
 }
 .back {
     background-color: #662596;
@@ -95,7 +101,6 @@ td {
 }
 .flag {
     background-color: #662596;
-     /* border: 5px solid rgb(75, 14, 75); */
 }
 .oneMine {
     color: blue;
