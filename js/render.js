@@ -23,7 +23,7 @@ function renderRevealCell(elCell, cellCoord) {
         elCell.removeAttribute("class")
         elCell.classList.add("back")
         elCell.innerText = '';
-        gBoard[cellCoord.i][cellCoord.j].isSho = false;
+        gBoard[cellCoord.i][cellCoord.j].isShown = false;
         return;
 
     }
