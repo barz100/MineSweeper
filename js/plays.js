@@ -70,6 +70,8 @@ function rightClick(event, elCell) {
         i: +elCell.dataset.i,
         j: +elCell.dataset.j
     }
+
+    if (gBoard[cellCoord.i][cellCoord.j].isShown) return;
     if (gBoard[cellCoord.i][cellCoord.j].isMarked) {
         gBoard[cellCoord.i][cellCoord.j].isMarked = false;
         renderUnFlagCell(elCell);
@@ -98,8 +100,8 @@ function leftClick(elCell) {
         setTimeout(function () { showOrHideHint(cellCoord); hintClicked(); }, 1000);
         return;
     }
-    // if cell is flaged do nothing
-    if (gBoard[cellCoord.i][cellCoord.j].isMarked) return;
+    // if cell is flaged or shown do nothing
+    if (gBoard[cellCoord.i][cellCoord.j].isMarked || gBoard[cellCoord.i][cellCoord.j].isShown) return;
     if (gBoard[cellCoord.i][cellCoord.j].isMine) {
         if (!gGame.life) {
             gameOver();

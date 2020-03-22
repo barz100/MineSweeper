@@ -142,7 +142,7 @@ function changeLife() {
 
 function keepBestScore() {
     var bestScore = parseInt(localStorage.getItem(gLevel.SIZE.toString()));
-    if (bestScore === NaN) localStorage.setItem(gLevel.SIZE.toString(), gGame.secsPassed);
+    if (isNaN(bestScore)) localStorage.setItem(gLevel.SIZE.toString(), gGame.secsPassed);
     else if (bestScore === 0 || (gGame.secsPassed > 0 && bestScore > gGame.secsPassed)) {
         bestScore = gGame.secsPassed;
         localStorage.setItem(gLevel.SIZE.toString(), gGame.secsPassed);
