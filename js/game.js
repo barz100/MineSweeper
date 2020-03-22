@@ -141,6 +141,8 @@ function changeLife() {
 }
 
 function keepBestScore() {
+    var elScore = document.querySelector(".score");
+    elScore.innerText = '';
     var bestScore = parseInt(localStorage.getItem(gLevel.SIZE.toString()));
     if (isNaN(bestScore)) localStorage.setItem(gLevel.SIZE.toString(), gGame.secsPassed);
     else if (bestScore === 0 || (gGame.secsPassed > 0 && bestScore > gGame.secsPassed)) {
@@ -148,7 +150,6 @@ function keepBestScore() {
         localStorage.setItem(gLevel.SIZE.toString(), gGame.secsPassed);
     }
     if (+bestScore > 0) {
-        var elScore = document.querySelector(".score");
         var minutes = Math.floor(bestScore / 60);
         var seconds = Math.floor(bestScore % 60);
         elScore.innerText = '🏆 Record:  ';
